@@ -102,13 +102,13 @@ const Register = () => {
                 htmlType="submit"
                 className="add_edit_button"
               >
-                Signup
-              </Button>
-            </Form.Item>
-          </Form>
-        </div>
+              Signup
+            </Button>
+          </Form.Item>
+        </Form>
       </div>
     </div>
-  );
+  </div>
+);
 };
 export default Register;

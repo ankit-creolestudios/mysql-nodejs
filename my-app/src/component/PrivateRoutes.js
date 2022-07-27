@@ -10,7 +10,7 @@ const PrivateRoutes = ({ children }) => {
   }, []);
   console.log(token);
   if (token === null) {
-    navigation("/login");
+    navigation("/signin");
   }
   if (token !== null) {
     navigation("/");
