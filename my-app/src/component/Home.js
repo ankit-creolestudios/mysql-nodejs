@@ -33,6 +33,12 @@ const Home = () => {
           About
         </Link>
       </div>
+      <div>
+        <Link to={"/suspense"}>Suspense Lazyload</Link>
+      </div>
+      <div>
+        <Link to="/crud">crud</Link>
+      </div>
     </div>
   );
 };
