@@ -1,4 +1,4 @@
-import { addUserApi, getUsers } from "../../apis";
+import { addUserApi, getUsersApi } from "../../apis";
 import { GET_USERS, ADD_USER } from "../types";
 import { put, takeEvery } from "redux-saga/effects";
 import { getUsersSlice, getUserByIdSlice, addUser } from "../slice/users";
@@ -6,12 +6,12 @@ import { getUserByIdApi } from "../../apis";
 import { GET_USER_BY_ID } from "../types";
 
 export function* getUserSaga() {
-  const users = yield getUsers();
-  yield put(getUsersSlice(users));
+  const users = yield getUsersApi();
+  yield put(getUsersSlice(users.data));
 }
 export function* getUserByIdSaga(action) {
   yield getUserByIdApi(action.id);
-  yield put(getUserByIdSlice());
+  yield put(getUserByIdSlice(action.id));
 }
 export function* createUserSaga(action) {
   console.log(action);

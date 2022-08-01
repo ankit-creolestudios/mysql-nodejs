@@ -1,12 +1,12 @@
 import axios from "axios";
 axios.defaults.baseURL = `https://localhost:5000`;
-const getUsers = async () => {
-  axios.get("/user");
+const getUsersApi = async () => {
+  axios.get("/users");
 };
 const getUserByIdApi = (id) => {
-  axios.get(`/user/${id}`);
+  axios.get(`/users/${id}`);
 };
 const addUserApi = (user) => {
-  axios.post("/user", user);
+  axios.post("/users", user);
 };
-export { getUsers, getUserByIdApi, addUserApi };
+export { getUsersApi, getUserByIdApi, addUserApi };

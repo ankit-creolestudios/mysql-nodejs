@@ -8,7 +8,6 @@ router.post("/create", async (req, res) => {
     const userDuplicate = await User.findOne({
       where: { email: req.body.email },
     });
-    console.log(userDuplicate, "userDuplicate");
     if (userDuplicate) {
       res.status(500).json({ message: "email already exist" });
     }
@@ -56,7 +55,6 @@ router.post("/login", async (req, res) => {
       res.status(500).json({ message: "no user email" });
     }
   } catch (err) {
-    console.log("aq", err);
     res.status(500).json(err);
   }
 });

@@ -1,9 +1,11 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Formik, Form, Field } from "formik";
 import { addUser } from "../../redux/slice/users";
 import { ADD_USER } from "../../redux/types";
+import { nanoid } from "@reduxjs/toolkit";
 const MyForm = () => {
+  const user = useSelector((state) => state);
   const dispatch = useDispatch();
   return (
     <div>
@@ -13,7 +15,9 @@ const MyForm = () => {
           initialValues={{ name: "", email: "", password: "" }}
           onSubmit={(values) => {
             console.log(values);
-            dispatch(addUser({ type: ADD_USER, user: { ...values, id: 1 } }));
+            dispatch(
+              addUser({ type: ADD_USER, user: { ...values, id: nanoid(8) } })
+            );
           }}
         >
           {() => (
