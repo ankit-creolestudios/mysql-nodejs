@@ -1,0 +1,28 @@
+.App-header{
+    background-color: #282c35;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px+2vmin);
+    color: #fff;
+}
+.App-header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.App-header ul li {
+    margin: 0 20px;
+}
+.App-header ul li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+}
+.App-header ul li a:hover{
+    color: rgba(255,255,255,.8);
+}

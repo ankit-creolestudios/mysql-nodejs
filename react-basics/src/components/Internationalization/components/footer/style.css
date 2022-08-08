@@ -1,0 +1,11 @@
+.App-footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.App-footer ul li{
+    margin: 0 10px;
+}
+.App-footer ul li button{
+    border: none;
+}
