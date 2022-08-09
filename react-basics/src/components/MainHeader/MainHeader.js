@@ -12,6 +12,9 @@ const MainHeader = () => {
           <li>
             <a href="/i18n">Internationalization</a>
           </li>
+          <li>
+            <a href="/antd">Antd Site</a>
+          </li>
         </ul>
       </nav>
     </header>
