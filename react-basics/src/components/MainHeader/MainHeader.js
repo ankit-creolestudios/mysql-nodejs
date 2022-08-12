@@ -15,6 +15,12 @@ const MainHeader = () => {
           <li>
             <a href="/antd">Antd Site</a>
           </li>
+          <li>
+            <a href="/hook">Hook</a>
+          </li>
+          <li>
+            <a href="controlanduncontrol">ControlAndUncontrol</a>
+          </li>
         </ul>
       </nav>
     </header>

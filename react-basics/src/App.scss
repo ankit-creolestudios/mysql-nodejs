@@ -279,3 +279,24 @@ body {
     margin: 50px 0;
   }
 }
+.hook {
+  // margin: 40px;
+  text-align: center;
+}
+.uncontrol {
+  text-align: center;
+  margin: 40px 0;
+  input {
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  button {
+    background: red;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px;
+  }
+}
