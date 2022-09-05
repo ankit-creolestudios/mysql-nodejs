@@ -6,6 +6,8 @@ import Home from "./components/Home/Home";
 import AntdSite from "./components/antd-site";
 import Hook from "./components/hooks";
 import Uncontrolled from "./components/ControlledVsUncontrolled";
+import Debounc from "./components/debounceAndThrotle/Debounc";
+import SagaUser from "./components/sagaRedux/SagaUser";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/antd" element={<AntdSite />} />
           <Route path="/hook" element={<Hook />} />
           <Route path="/controlanduncontrol" element={<Uncontrolled />} />
+          <Route path="/debounce" element={<Debounc />} />
+          <Route path="saga" element={<SagaUser />} />
         </Routes>
       </BrowserRouter>
     </div>
